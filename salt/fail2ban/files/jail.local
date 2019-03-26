@@ -211,7 +211,7 @@ action = %(action_)s
 
 [ssh-iptables]
 enabled = true
-filter = sshd-vcharney
+filter = sshd
 action = iptables[name=SSH, port=22, protocol=tcp]
 #         sendmail-whois[name=SSH, dest=user@domain.tld, sender=fail2ban@host.domain.tld, sendername="Fail2Ban"]
 logpath = /var/log/secure
@@ -220,7 +220,7 @@ bantime = 1800
 
 [ssh-repeater]
 enabled  = true
-filter   = sshd-vcharney
+filter   = sshd
 action   = iptables-repeater[name=SSH, port=22, protocol=tcp]
 logpath  = /var/log/secure
 maxretry = 21
