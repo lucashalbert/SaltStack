@@ -1,0 +1,16 @@
+[Unit]
+Description=Dell OpenManage Server Administrator
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+RemainAfterExit=true
+ExecStart=/opt/dell/srvadmin/sbin/srvadmin-services.sh start
+ExecStop=/opt/dell/srvadmin/sbin/srvadmin-services.sh stop
+ExecReload=/opt/dell/srvadmin/sbin/srvadmin-services.sh restart
+
+[Install]
+WantedBy=multi-user.target

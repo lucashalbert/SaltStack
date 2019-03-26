@@ -1,0 +1,24 @@
+essential-packages:
+  pkg.installed:
+    - pkgs:
+      - deltarpm
+      - bash
+      - vim-enhanced
+      - htop
+      - iftop
+      - mailx
+      - ntp
+      - bash-completion
+      - bzip2
+      - nmap-ncat
+      - haveged
+      - iptables-services
+      - nrpe
+      - nagios-plugins-all
+      - munin-node
+      - sendmail
+      - net-tools
+      - wget
+      - openldap-clients
+      - rsync
+      - openssh-clients
