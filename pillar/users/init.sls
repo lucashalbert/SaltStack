@@ -18,7 +18,7 @@ users:
     unique: False
       
   username:
-    fullname: reverus
+    fullname: username
     uid: 1001
     gid: 100
     allow_uid_change: True
